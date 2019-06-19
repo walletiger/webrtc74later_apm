@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: webrtc-apm-wrapper
+Description: WebRTC Audio Processing library wrapper
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -lwebrtc_apm_wrapper
+Cflags: -DWEBRTC_AUDIO_PROCESSING_ONLY_BUILD -I${includedir}/ @PLATFORM_CFLAGS@
