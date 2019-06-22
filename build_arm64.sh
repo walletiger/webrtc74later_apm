@@ -1,0 +1,2 @@
+./autogen.sh 
+./configure --prefix=$PWD/../_install --enable-shared --enable-neon  CFLAGS="-march=native -Ofast -DWEBRTC_POSIX -DWEBRTC_LINUX -DWEBRTC_THREAD_RR -DWEBRTC_CLOCK_TYPE_REALTIME -DNDEBUG -DHAVE_NEON=1" CXXFLAGS="-march=native -Ofast -DWEBRTC_POSIX -DWEBRTC_LINUX -DWEBRTC_THREAD_RR -DWEBRTC_CLOCK_TYPE_REALTIME -DNDEBUG -DHAVE_NEON=1" 
